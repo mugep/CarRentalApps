@@ -32,11 +32,11 @@ namespace CarRentalApps
             this.label1 = new System.Windows.Forms.Label();
             this.tbCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtRented = new System.Windows.Forms.DateTimePicker();
+            this.dtReturned = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTypeOfCar = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -71,21 +71,21 @@ namespace CarRentalApps
             this.label2.TabIndex = 2;
             this.label2.Text = "Customer Name";
             // 
-            // dateTimePicker1
+            // dtRented
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(10, 143);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dtRented.Location = new System.Drawing.Point(10, 143);
+            this.dtRented.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtRented.Name = "dtRented";
+            this.dtRented.Size = new System.Drawing.Size(191, 20);
+            this.dtRented.TabIndex = 3;
             // 
-            // dateTimePicker2
+            // dtReturned
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(398, 143);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker2.TabIndex = 4;
+            this.dtReturned.Location = new System.Drawing.Point(398, 143);
+            this.dtReturned.Margin = new System.Windows.Forms.Padding(2);
+            this.dtReturned.Name = "dtReturned";
+            this.dtReturned.Size = new System.Drawing.Size(191, 20);
+            this.dtReturned.TabIndex = 4;
             // 
             // label3
             // 
@@ -109,19 +109,19 @@ namespace CarRentalApps
             this.label4.TabIndex = 6;
             this.label4.Text = "Date Returned";
             // 
-            // comboBox1
+            // cbTypeOfCar
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTypeOfCar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTypeOfCar.FormattingEnabled = true;
+            this.cbTypeOfCar.Items.AddRange(new object[] {
             "Honda",
             "Toyota",
             "Hyundai",
             "Kia"});
-            this.comboBox1.Location = new System.Drawing.Point(9, 217);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cbTypeOfCar.Location = new System.Drawing.Point(9, 217);
+            this.cbTypeOfCar.Name = "cbTypeOfCar";
+            this.cbTypeOfCar.Size = new System.Drawing.Size(186, 21);
+            this.cbTypeOfCar.TabIndex = 7;
             // 
             // label5
             // 
@@ -152,11 +152,11 @@ namespace CarRentalApps
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbTypeOfCar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtReturned);
+            this.Controls.Add(this.dtRented);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbCustomerName);
             this.Controls.Add(this.label1);
@@ -173,11 +173,11 @@ namespace CarRentalApps
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCustomerName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtRented;
+        private System.Windows.Forms.DateTimePicker dtReturned;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTypeOfCar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
     }

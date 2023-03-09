@@ -19,7 +19,11 @@ namespace CarRentalApps
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thank you for Renting");
+            string customerName = tbCustomerName.Text;
+            string dateOut = dtRented.Value.ToString();
+            string dateIn = dtReturned.Value.ToString();
+            var carType = cbTypeOfCar.SelectedItem.ToString();
+            MessageBox.Show($"Thank you for Renting: {tbCustomerName.Text}");
         }
     }
 }
